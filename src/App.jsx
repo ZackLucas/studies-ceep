@@ -1,9 +1,12 @@
 import React from 'react';
+import FormsRegister from './components/FormsRegister';
+import NoteList from './components/NoteList';
 
-function App() {
-  return (
-    <h1>Meu App React</h1>
-  );
-}
+const App = () => (
+  <>
+    <FormsRegister />
+    <NoteList />
+  </>
+);
 
 export default App;
