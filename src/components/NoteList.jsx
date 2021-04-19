@@ -3,15 +3,12 @@ import CardNote from './CardNote';
 
 const NoteList = () => (
   <ul>
-    <li>
-      <CardNote />
-    </li>
-    <li>
-      <CardNote />
-    </li>
-    <li>
-      <CardNote />
-    </li>
+    {Array.of('Trabalho', 'Trabalho', 'Estudos').map((category) => (
+      <li>
+        <div>{category}</div>
+        <CardNote />
+      </li>
+    ))}
   </ul>
 );
 
